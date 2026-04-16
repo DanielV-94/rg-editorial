@@ -60,43 +60,10 @@ const runLoader = () => {
 };
 
 /* ───────────────────────────────────────────────
-   Intro Gate — pantalla inicial
+   Loader — ejecutar directamente
    ─────────────────────────────────────────────── */
-const introGate = document.getElementById("introGate");
-const introGateBtn = document.getElementById("introGateBtn");
-
-if (introGate && introGateBtn) {
-  introGateBtn.addEventListener("click", () => {
-    // 1. Cubrir con loader negro INMEDIATAMENTE — sin flash del hero
-    if (loader) {
-      loader.classList.add("is-visible");
-      gsap.set(loader, { opacity: 1, visibility: "visible" });
-    }
-
-    // 2. Animar salida del gate encima del fondo negro
-    introGate.classList.add("is-leaving");
-
-    // 3. Tras la animación de salida, reproducir audio y lanzar textos del loader
-    setTimeout(() => {
-      introGate.style.display = "none";
-
-      // Reproducir voiceover (garantizado porque viene de click de usuario)
-      if (isHomeLuxe) {
-        const loaderVoice = document.getElementById("loaderVoice");
-        if (loaderVoice) {
-          loaderVoice.volume = 0.85;
-          loaderVoice.play().catch(() => {});
-        }
-      }
-
-      // Lanzar animación del loader (ya visible, solo anima los textos y luego sale)
-      runLoader();
-    }, 680);
-  });
-} else {
-  // No hay gate (otras páginas): ejecutar loader directo
-  runLoader();
-}
+// Ejecutar loader directamente al cargar la página
+runLoader();
 
 /* ───────────────────────────────────────────────
    Smooth scroll
