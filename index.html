@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RG Impermeabilizaciones y Pintura — Editorial Premium</title>
+  <meta name="description"
+    content="RG Impermeabilizaciones y Pintura: experiencia premium en mantenimiento integral, albañilería, herrería e impermeabilización para hogar y negocio." />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23f4f1ec'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='46' font-family='Arial' fill='%238c5b2d'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- INTRO GATE — pantalla previa al loader -->
+  <div class="intro-gate" id="introGate">
+    <div class="intro-gate-noise" aria-hidden="true"></div>
+    <div class="intro-gate-content">
+      <p class="intro-gate-brand">RG <span>Impermeabilizaciones y Pintura</span></p>
+      <h1 class="intro-gate-title">Editorial<br />Premium</h1>
+      <p class="intro-gate-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true" width="18" height="18">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+        </svg>
+        Para una experiencia completa, activa las bocinas de tu dispositivo
+      </p>
+      <button class="intro-gate-btn" id="introGateBtn">
+        <span>Entrar al sitio</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader-cinematic">
+      <p class="loader-scene is-active">RG Impermeabilizaciones y Pintura</p>
+      <p class="loader-scene">Mantenimiento premium para hogar y negocio</p>
+      <p class="loader-scene">Calidad, rapidez y responsabilidad</p>
+    </div>
+  </div>
+
+  <div class="page home-luxe">
+    <div class="luxe-noise" aria-hidden="true"></div>
+    <div class="luxe-cursor" aria-hidden="true"></div>
+    <div class="page-transition-overlay" aria-hidden="true"></div>
+    <div class="capa-overlay" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="./index.html">RG <span>Impermeabilizaciones y Pintura</span></a>
+        <a class="pill nav-cta-desktop" href="./contacto.html">Cotización Express</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar apariencia"
+          title="Cambiar apariencia">
+          <span class="theme-toggle-dot" aria-hidden="true"></span>
+          <span class="theme-toggle-label">Modo Noche</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="links" id="mainNav" aria-hidden="true">
+      <a href="#inicio">Inicio</a>
+      <a href="#capitulos">Servicios</a>
+      <a href="#manifiesto">Diferencial</a>
+      <a href="./coleccion.html">Proyectos</a>
+      <a href="./servicios.html">Servicios</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+      <section class="hero-luxe container" id="inicio">
+        <div class="hero-copy">
+          <p class="kicker reveal">RG IMPERMEABILIZACIONES Y PINTURA · ATENCIÓN EN TU CIUDAD</p>
+          <h1 class="reveal-title" id="heroTitle">Mantenimiento integral<br />con nivel premium<br />y ejecución
+            impecable.
+          </h1>
+          <p class="reveal">Transformamos hogares y negocios con acabados de alto estándar: impermeabilización,
+            pintura, albañilería, herrería y mantenimiento técnico con respuesta ágil y trabajo garantizado.</p>
+          <div class="hero-cta reveal">
+            <a class="pill solid" href="./servicios.html">Explorar servicios</a>
+            <a class="pill ghost" href="#capitulos">Ver soluciones</a>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal">
+          <canvas id="heroLightCanvas" aria-hidden="true"></canvas>
+          <figure class="hero-main-media">
+            <img src="./INFO/GENERAL.jpeg" alt="Equipo de mantenimiento integral RG" />
+          </figure>
+          <div class="hero-float-card" data-float="0">
+            <p>Tiempo de respuesta</p>
+            <h3 class="counter" data-target="24">0</h3>
+            <span>horas o menos</span>
+          </div>
+          <div class="hero-float-card" data-float="1">
+            <p>Especialidades activas</p>
+            <h3 class="counter" data-target="6">0</h3>
+            <span>servicios clave</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="signature-strip" aria-label="Presencia de marca">
+        <div class="strip-track">
+          <span>IMPERMEABILIZACIÓN</span>
+          <span>ALBAÑILERÍA</span>
+          <span>HERRERÍA</span>
+          <span>PINTURA</span>
+          <span>AIRE ACONDICIONADO</span>
+          <span>MANTENIMIENTO GENERAL</span>
+          <span>IMPERMEABILIZACIÓN</span>
+          <span>ALBAÑILERÍA</span>
+          <span>HERRERÍA</span>
+          <span>PINTURA</span>
+        </div>
+      </section>
+
+      <section class="chapters" id="capitulos">
+        <div class="container chapters-layout">
+          <div class="chapter-visual-wrap">
+            <div class="chapter-visual-frame">
+              <img class="chapter-image is-active" data-image="0" src="./media/remodelacion%20(5).jpeg"
+                alt="Servicio de albañilería profesional" />
+              <img class="chapter-image" data-image="1" src="./INFO/HERRERIA.jpeg"
+                alt="Servicio de herrería residencial y comercial" />
+              <img class="chapter-image" data-image="2" src="./INFO/AIRE-ACONDICIONADO.jpeg"
+                alt="Mantenimiento de aire acondicionado" />
+            </div>
+            <p class="chapter-tag" id="chapterTag">Capítulo 01 · Albañilería y acabados</p>
+          </div>
+
+          <div class="chapter-steps">
+            <article class="chapter" data-index="0" data-tag="Capítulo 01 · Albañilería y acabados">
+              <img class="chapter-card-bg" src="./media/remodelacion%20(5).jpeg" alt="" aria-hidden="true" />
+              <div class="chapter-glass-body">
+                <p class="chapter-kicker">01 · Albañilería integral</p>
+                <h2>Estructura, ampliación y acabado con precisión profesional.</h2>
+                <p>Ejecutamos construcción, remodelación y reparación con control técnico y limpieza de obra para que tu
+                  espacio quede funcional, seguro y con estética premium.</p>
+                <ul>
+                  <li>Construcción, ampliaciones y remodelaciones</li>
+                  <li>Muros, bardas, pisos y azulejos</li>
+                  <li>Repellados, aplanados y acabados finos</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="chapter" data-index="1" data-tag="Capítulo 02 · Herrería de alto desempeño">
+              <img class="chapter-card-bg" src="./INFO/HERRERIA.jpeg" alt="" aria-hidden="true" />
+              <div class="chapter-glass-body">
+                <p class="chapter-kicker">02 · Herrería residencial y comercial</p>
+                <h2>Seguridad, diseño y durabilidad en metal.</h2>
+                <p>Fabricamos e instalamos estructuras metálicas robustas con acabados limpios, soldadura profesional y
+                  ajuste a medida para cada proyecto.</p>
+                <ul>
+                  <li>Portones, escaleras y barandales</li>
+                  <li>Rejas, cercas y protecciones</li>
+                  <li>Muebles metálicos y techumbres</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="chapter" data-index="2" data-tag="Capítulo 03 · Climatización y mantenimiento">
+              <img class="chapter-card-bg" src="./INFO/AIRE-ACONDICIONADO.jpeg" alt="" aria-hidden="true" />
+              <div class="chapter-glass-body">
+                <p class="chapter-kicker">03 · Aires acondicionados</p>
+                <h2>Confort continuo con mantenimiento experto.</h2>
+                <p>Atendemos limpieza, recarga, corrección de fugas e instalación de equipos para mantener alto
+                  rendimiento, bajo consumo y operación confiable.</p>
+                <ul>
+                  <li>Mantenimiento y limpieza profesional</li>
+                  <li>Recarga de gas refrigerante</li>
+                  <li>Revisión, ajuste y reparación de fallas</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifiesto container" id="manifiesto">
+        <div class="manifiesto-head">
+          <p class="kicker reveal">Filosofía RG</p>
+          <h2 class="reveal">Lujo real en servicio: orden, puntualidad, detalle y resultados duraderos.</h2>
+        </div>
+        <div class="manifiesto-grid">
+          <article class="manifiesto-card reveal">
+            <h3>Trabajo garantizado</h3>
+            <p>Nos comprometemos con acabados bien hechos y soluciones pensadas para rendir en el tiempo.
+            </p>
+          </article>
+          <article class="manifiesto-card reveal">
+            <h3>Atención rápida</h3>
+            <p>Respondemos con velocidad y claridad para que tu hogar o negocio nunca se detenga.
+            </p>
+          </article>
+          <article class="manifiesto-card reveal">
+            <h3>Servicio integral</h3>
+            <p>Una sola empresa para impermeabilización, plomería, electricidad, pintura, herrería y construcción.
+            </p>
+          </article>
+        </div>
+        <a class="pill solid reveal" href="./contacto.html">Solicitar cotización</a>
+      </section>
+
+      <!-- GALERÍA PREMIUM -->
+      <section class="video-luxe" id="video-section">
+        <div class="video-luxe-inner">
+          <div class="video-luxe-copy reveal">
+            <p class="kicker">GALERÍA VISUAL · PROYECTOS RG</p>
+            <h2>Acabados limpios,<br />resultado premium.</h2>
+          </div>
+          <div class="video-stage reveal">
+            <div class="gallery-grid" aria-label="Galería de servicios RG">
+              <img src="./media/remodelacion%20(1).jpeg" alt="Remodelación integral de interiores" loading="lazy" />
+              <img src="./media/pintura%20(2).jpeg" alt="Pintura profesional en muro" loading="lazy" />
+              <img src="./media/plomeria%20(1).jpeg" alt="Mantenimiento técnico de plomería" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-luxe container">
+        <div class="cta-panel reveal">
+          <p class="kicker">RG IMPERMEABILIZACIONES Y PINTURA · COTIZACIÓN SIN COMPROMISO</p>
+          <h2>Tu proyecto merece ejecución premium de principio a fin.</h2>
+          <p>Atendemos en tu ciudad y alrededores · WhatsApp: 984 130 3765 · Trabajo garantizado.</p>
+          <a class="pill solid" href="./contacto.html">Agendar evaluación</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top-rule" aria-hidden="true"></div>
+      <div class="footer-grid">
+
+        <div class="footer-ed-brand">
+          <p class="footer-brand-name">RG Impermeabilizaciones y Pintura</p>
+          <p class="footer-brand-tagline">Mantenimiento Profesional · México</p>
+          <span>Atendemos en tu ciudad y alrededores</span>
+          <span>WhatsApp / Teléfono: 984 130 3765</span>
+          <span>Pago con tarjeta, transferencia y efectivo · Facturamos</span>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Navegación</p>
+          <nav class="footer-ed-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#capitulos">Servicios</a>
+            <a href="#manifiesto">Diferencial</a>
+            <a href="./coleccion.html">Proyectos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./contacto.html">Contacto</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Contacto</p>
+          <div class="footer-col-contact">
+            <a href="https://wa.me/529841303765" target="_blank" rel="noopener">WhatsApp: 984 130 3765</a>
+            <a href="tel:+529841303765">Llamadas: +52 984 130 3765</a>
+            <span>Horario de atención rápida</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-ed-copy">© 2026 RG Impermeabilizaciones y Pintura. Todos los derechos reservados.</p>
+        <span class="footer-ed-credit">Diseño editorial premium por
+          <a href="https://www.danielvelez-webdev.com" target="_blank" rel="noopener">Daniel Vélez</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

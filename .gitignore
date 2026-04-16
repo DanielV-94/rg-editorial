@@ -1,0 +1,27 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Herramientas de desarrollo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (si lo usas en el futuro)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos temporales
+*.temp
+*.tmp
+~*
+
+# Directorios del sistema
+.agents/
+.env.local
+.env.*.local
+
+# Logs
+*.log
