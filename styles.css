@@ -144,15 +144,14 @@ body.page-ready .page {
 }
 /* En desktop: nav flotante sobre el topbar, centrado */
 .links {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 74px;
-  z-index: 165;
+  position: static;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.4rem;
+  width: min(1180px, 92vw);
+  margin: 0 auto;
+  padding: 0 0 0.75rem;
   pointer-events: auto;
 }
 .links a {
