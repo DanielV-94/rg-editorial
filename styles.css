@@ -1,9 +1,11 @@
 :root {
-  --bg: #f4f1ec;
-  --ink: #111216;
-  --muted: #5d636f;
-  --accent: #8c5b2d;
-  --line: rgba(17, 18, 22, 0.16);
+  --bg: #f8f6f3;
+  --ink: #1a1410;
+  --muted: #6b5d54;
+  --accent: #d4794e;
+  --accent-gold: #c9a961;
+  --accent-secondary: #3d2817;
+  --line: rgba(26, 20, 16, 0.12);
 }
 * {
   box-sizing: border-box;
@@ -120,15 +122,25 @@ body.page-ready .page {
   font-family: "Sora", sans-serif;
   font-weight: 700;
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.35rem;
+  align-items: center;
+  gap: 0.6rem;
+  transition: opacity 0.2s;
+}
+.brand:hover {
+  opacity: 0.85;
+}
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 .brand span {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7a624a;
-  margin-left: 0;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 800;
 }
 /* En desktop: nav flotante sobre el topbar, centrado */
 .links {
@@ -514,9 +526,15 @@ body.page-ready .page {
   .brand {
     min-width: 0;
     max-width: calc(100% - 120px);
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .brand span {
+    display: none;
   }
 
   .hamburger {
@@ -2098,8 +2116,8 @@ body.page-ready .page {
 }
 
 body.theme-dark {
-  background: #0f1116;
-  color: #ece3d4;
+  background: #0d0b0a;
+  color: #ede8e1;
 }
 
 body.theme-dark .home-luxe,
@@ -2107,21 +2125,21 @@ body.theme-dark .inner-luxe {
   background:
     radial-gradient(
       circle at 14% 12%,
-      rgba(255, 255, 255, 0.05),
+      rgba(212, 121, 78, 0.08),
       transparent 32%
     ),
     radial-gradient(
       circle at 88% 0%,
-      rgba(190, 125, 62, 0.12),
+      rgba(201, 169, 97, 0.06),
       transparent 48%
     ),
-    #0f1116;
+    #0d0b0a;
 }
 
 body.theme-dark .topbar,
 body.theme-dark .home-luxe .topbar,
 body.theme-dark .inner-luxe .topbar {
-  background: color-mix(in srgb, #0f1116 90%, #181b25 10%);
+  background: color-mix(in srgb, #0d0b0a 92%, #1a1410 8%);
 }
 
 body.theme-dark .brand,

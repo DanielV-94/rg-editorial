@@ -5,6 +5,7 @@ Sitio web de experiencia premium para **RG Impermeabilizaciones y Pintura**, emp
 ## 🎯 Características
 
 ### Tecnología Frontend
+
 - **HTML5** semántico y accesible
 - **CSS3** moderno con variables CSS y media queries responsivas
 - **JavaScript Vanilla** con GSAP 3.13.0 y ScrollTrigger para animaciones
@@ -13,12 +14,14 @@ Sitio web de experiencia premium para **RG Impermeabilizaciones y Pintura**, emp
 ### Funcionalidades Principales
 
 #### 1. **Modo Oscuro Persistente**
+
 - Toggle elegante en la barra de navegación
 - Persistencia mediante localStorage
 - Fallback a preferencias del sistema (`prefers-color-scheme`)
 - Paleta de colores completa para dark mode
 
 #### 2. **Galería Interactiva Antes/Después**
+
 - 3 sliders de comparación con rango deslizable
 - Categorías de filtrado: Todo, Pintura, Remodelación, Aires
 - Auto-demo en viewport (50% → 70% → 50%)
@@ -26,7 +29,9 @@ Sitio web de experiencia premium para **RG Impermeabilizaciones y Pintura**, emp
 - Se cancela automáticamente con interacción del usuario
 
 #### 3. **Diseño Responsivo Premium**
+
 Breakpoints optimizados:
+
 - **1440px+** → Desktop completo
 - **1220px** → Ajustes de espaciado
 - **980px** → Navbar reordenada, brand con ellipsis
@@ -35,6 +40,7 @@ Breakpoints optimizados:
 - **580px** → Comparador mobile-friendly (aspect-ratio 16/11)
 
 #### 4. **Animaciones y Efectos**
+
 - Loader cinematográfico al entrar
 - Hero section con canvas y floating cards
 - Smooth page transitions con GSAP timelines
@@ -42,6 +48,7 @@ Breakpoints optimizados:
 - Micro-interacciones en botones y componentes
 
 #### 5. **Accesibilidad**
+
 - ARIA labels en elementos interactivos
 - Navegación por teclado completa
 - Semántica HTML correcta
@@ -70,12 +77,14 @@ rg-editorial/
 ## 🚀 Inicio Rápido
 
 ### 1. Clonar el Repositorio
+
 ```bash
 git clone https://github.com/tu-usuario/rg-editorial.git
 cd rg-editorial
 ```
 
 ### 2. Abrir Localmente
+
 Simplemente abre `index.html` en tu navegador, o usa un servidor local:
 
 ```bash
@@ -94,12 +103,14 @@ Luego accede a `http://localhost:8000`
 ## 🎨 Paleta de Colores
 
 ### Light Mode
+
 - **Primario**: `#8c5b2d` (marrón premium)
 - **Fondo**: `#f4f1ec` (crema)
 - **Texto**: `#1a1a1a` (negro suave)
 - **Acento**: `#c9a961` (oro)
 
 ### Dark Mode
+
 - **Primario**: `#f4f1ec` (crema)
 - **Fondo**: `#0d0d0d` (casi negro)
 - **Texto**: `#e8e4df` (gris claro)
@@ -107,17 +118,18 @@ Luego accede a `http://localhost:8000`
 
 ## 🔧 Tecnologías Utilizadas
 
-| Tecnología | Versión | Propósito |
-|-----------|---------|----------|
-| **GSAP** | 3.13.0 | Animaciones y timelines |
-| **ScrollTrigger** | Latest | Animations on scroll |
-| **Three.js** | 0.164.1 | Gráficos 3D (canvas hero) |
-| **Lenis** | 1.1.14 | Smooth scrolling |
-| **Google Fonts** | Latest | Manrope, Sora |
+| Tecnología        | Versión | Propósito                 |
+| ----------------- | ------- | ------------------------- |
+| **GSAP**          | 3.13.0  | Animaciones y timelines   |
+| **ScrollTrigger** | Latest  | Animations on scroll      |
+| **Three.js**      | 0.164.1 | Gráficos 3D (canvas hero) |
+| **Lenis**         | 1.1.14  | Smooth scrolling          |
+| **Google Fonts**  | Latest  | Manrope, Sora             |
 
 ## 📱 Responsive Design
 
 El sitio está optimizado para:
+
 - ✅ Desktop (1440px+)
 - ✅ Laptop (1220px, 980px)
 - ✅ Tablet (860px, 640px)
@@ -128,7 +140,9 @@ Todas las media queries están centralizadas en `styles.css` para facilitar mant
 ## 🎬 Animaciones Clave
 
 ### Auto-demo del Comparador
+
 Cuando el slider de comparación entra en viewport (55% visible):
+
 1. Se ejecuta una vez por slider
 2. Mueve de 50% → 70% en 0.8s (ease-out)
 3. Retorna 70% → 50% en 0.75s
@@ -136,6 +150,7 @@ Cuando el slider de comparación entra en viewport (55% visible):
 5. Respeta `prefers-reduced-motion` del sistema
 
 ### Modo Oscuro
+
 - Toggle suave (0.2s transition)
 - Se persiste en localStorage (`"rg-theme-mode"`)
 - Remapea 100+ propiedades CSS
@@ -155,6 +170,7 @@ Cuando el slider de comparación entra en viewport (55% visible):
 ### Opciones Recomendadas:
 
 1. **GitHub Pages** (gratis)
+
    ```bash
    # Crea repo público y activa GitHub Pages en Settings
    ```
